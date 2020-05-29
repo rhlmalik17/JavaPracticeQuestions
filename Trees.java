@@ -32,6 +32,14 @@ public class Trees
 
     
     }
+    public void createTree1()
+    {
+        head = new TreeNode(10);
+        head.left=new TreeNode(20);
+        head.rightNode=new TreeNode(30);
+        head.rightNode.rightNode=new TreeNode(40);
+        head.rightNode.rightNode.leftNode=new TreeNode(50);
+    }
     public void initHead(int data)
     {
         head = new TreeNode(data);
@@ -59,6 +67,7 @@ public class Trees
             head.rightNode=new TreeNode(data);
         }
     }
+    
     // public void display(TreeNode temp)
     // {
     //     if(temp==null || temp.leftNode==null && temp.rightNode==null)
